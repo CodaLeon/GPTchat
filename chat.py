@@ -98,7 +98,7 @@ bio = io.BytesIO()
 doc_download.save(bio)
 if doc_download:
     st.download_button(
-        label="Click here to download",
+        label="Download Chat History",
         data=bio.getvalue(),
         file_name="chat_history.docx",
         mime="docx"
